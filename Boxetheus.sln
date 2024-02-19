@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boxetheus", "Boxetheus\Boxetheus.csproj", "{20A68E7E-51E0-4221-BAC4-A5E200B4D458}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20A68E7E-51E0-4221-BAC4-A5E200B4D458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20A68E7E-51E0-4221-BAC4-A5E200B4D458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20A68E7E-51E0-4221-BAC4-A5E200B4D458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20A68E7E-51E0-4221-BAC4-A5E200B4D458}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0311CE5E-39FC-419C-A124-59D15E9333A9}
+	EndGlobalSection
+EndGlobal
