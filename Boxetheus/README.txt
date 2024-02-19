@@ -28,4 +28,8 @@ Add a model to an ASP.net Core MVC app
 2) Initiated the Migration from tools menu selected NuGet Package Manager and chosen Package Manager Console.
 3) Tested the app by running the app and by selecting the Movie App link and examined the generated database context class and registration.
 4) Examined the Migration Initialcreate.cs migration file 
- 
+
+Part 5, Work with a database in an ASP.NET Core MVC app
+1) Examined the database from view menu option opened the SQL Server Object 
+2) Created a new class named SeedData in the models folder and replaced the code and added new movie list.
+3) Added the seed initializer replaced the contents of program.cs class and when executed the code could see the list of movie seeded in the code.

@@ -1,6 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Boxetheus.Data;
+using Boxetheus.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<BoxetheusContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("BoxetheusContext")));
@@ -9,7 +11,12 @@ builder.Services.AddDbContext<BoxetheusContext>(options =>
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
 
+    SeedData.Initialize(services);
+}
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
