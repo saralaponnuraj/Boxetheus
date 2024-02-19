@@ -21,3 +21,11 @@ Solutions:
 5. Then Selected Razor View - Empty and kept the default name `Index.cshtml`.
 6. Replaced the contents of the `Views/HelloWorld/Index.cshtml` Razor view file.
 7. In the `HelloWorldController` class, replaced the `Index` method.
+
+Part 4, add a model to an ASP.NET Core MVC app
+Add a model to an ASP.net Core MVC app
+1) Added a data model class : A Movie class is created in the Models folder to represent the data model for the application and in MovieContext class, derived from DbContext, is created in the Data folder. This class represents the database context and includes a DbSet for the Movie model.
+2) Initiated the Migration from tools menu selected NuGet Package Manager and chosen Package Manager Console.
+3) Tested the app by running the app and by selecting the Movie App link and examined the generated database context class and registration.
+4) Examined the Migration Initialcreate.cs migration file 
+ 

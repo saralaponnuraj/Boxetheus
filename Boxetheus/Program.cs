@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Boxetheus.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<BoxetheusContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("BoxetheusContext")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
