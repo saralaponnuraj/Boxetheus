@@ -33,3 +33,4 @@ Part 5, Work with a database in an ASP.NET Core MVC app
 1) Examined the database from view menu option opened the SQL Server Object 
 2) Created a new class named SeedData in the models folder and replaced the code and added new movie list.
 3) Added the seed initializer replaced the contents of program.cs class and when executed the code could see the list of movie seeded in the code.
+
