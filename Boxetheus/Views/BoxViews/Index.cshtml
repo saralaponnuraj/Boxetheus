@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Boxetheus.Models.BoxView>
+﻿@model Boxetheus.Models.BoxViewDesignModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,38 +9,50 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="BoxViews" asp-action="Index" method="get">
+    <p>
+ <select asp-for="BoxDesign" asp-items="Model.Design">
+            <option value="">All</option>
+        </select>
+
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Brand)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Brand)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.OrderDate)
+                @Html.DisplayNameFor(model => model.BoxViews![0].OrderDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Category)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Category)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Design)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Design)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Shape)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Shape)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Size)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Size)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Quantity)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Quantity)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Price)
+                @Html.DisplayNameFor(model => model.BoxViews![0].Price)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+        @foreach (var item in Model.BoxViews!)
+        {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Brand)

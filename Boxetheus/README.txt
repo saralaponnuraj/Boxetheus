@@ -34,3 +34,15 @@ Part 5, Work with a database in an ASP.NET Core MVC app
 2) Created a new class named SeedData in the models folder and replaced the code and added new movie list.
 3) Added the seed initializer replaced the contents of program.cs class and when executed the code could see the list of movie seeded in the code.
 
+
+2024-02-19 2:07AM
+Add search to an ASP.NET Core MVC app
+Controller Modifications:
+In the controller, updated the action methods that handle the displaying of data to include search functionality.Extracted and filtered data based on the search criteria.
+Updated the corresponding views to include a search form and displayed the search results. 
+Created a Search Form in the view, design and implement an HTML form that captures the user input for search.
+In the controller, created an action method to handle the form submission. Extracted the search query from the form and use it to filter the data.
+Implemented the Search Logic and updated data access logic to include the search functionality.
+Filtered the data based on the search query and reviewed the return the results.
+Verified the displayed Search Results and Modified the view to display the search results.
+Used Razor syntax to conditionally render the search results.Tested the web to search functionality to ensure it works as expected.
