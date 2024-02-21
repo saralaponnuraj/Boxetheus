@@ -46,3 +46,15 @@ Implemented the Search Logic and updated data access logic to include the search
 Filtered the data based on the search query and reviewed the return the results.
 Verified the displayed Search Results and Modified the view to display the search results.
 Used Razor syntax to conditionally render the search results.Tested the web to search functionality to ensure it works as expected.
+
+2024-02-20 10.10PM
+To add a new field to an ASP.NET Core MVC app
+
+Accessed the project in Visual Studio to begin the modification process.Opened the model class to add a new field:
+Navigated to the relevant model class within the project. Added a new property to the class with the appropriate data type:
+Added a new property in the model class, specifying the appropriate data type for the desired field.
+Opened the data context class to add a new DbSet for the new property:
+Accessed the data context class that is associated with the model and incorporated a new DbSet for the newly added property.
+Executed the migration to update the database with the new field.
+Executed a migration to apply the changes to the database, ensuring synchronization with the updated model.
+Updated the views and controllers to handle the new field.Modified the views and controllers that involve the model to accommodate the new field, ensuring proper handling and integration into the application's user interface and functionality.

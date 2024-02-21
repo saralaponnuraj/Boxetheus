@@ -22,21 +22,25 @@ namespace Boxetheus.Models
                 new BoxView
                 {
                     Brand = "Boxify",
+                    OrderDate = DateTime.Now,
                     Category = "Cosmetic Box",
                     Design = "Floral Design",
                     Shape = "Oval",
                     Size = "Medium",
                     Quantity = 10,
+                    Color = "Pink",
                     Price = 277.50M
                 },
                 new BoxView
                 {
                     Brand = "CargoCove",
+                    OrderDate = DateTime.Now,
                     Category = "Toy Box",
                     Design = "Cartoon Characters",
                     Shape = "Custom Shape",
                     Size = "Large",
                     Quantity = 15,
+                    Color = "Gray",
                     Price = 80.49M
                 },
                 new BoxView
@@ -48,6 +52,7 @@ namespace Boxetheus.Models
                     Shape = "Standard",
                     Size = "Abstract Art",
                     Quantity = 100,
+                    Color = "Beige",
                     Price = 259.59M
                 },
                 new BoxView
@@ -59,6 +64,7 @@ namespace Boxetheus.Models
                     Shape = "Extra Large",
                     Size = "Vintage Patterns",
                     Quantity = 12,
+                    Color = "Brown",
                     Price = 183.29M
                 },
                 new BoxView
@@ -70,6 +76,7 @@ namespace Boxetheus.Models
                     Shape = "Rectangular",
                     Size = "Large",
                     Quantity = 50,
+                    Color = "Blue",
                     Price = 53.97M
                 },
                 new BoxView
@@ -81,6 +88,7 @@ namespace Boxetheus.Models
                     Shape = "Square",
                     Size = "Medium",
                     Quantity = 8,
+                    Color = "Red Violet",
                     Price = 250.39M
                 },
                 new BoxView
@@ -92,6 +100,7 @@ namespace Boxetheus.Models
                     Shape = "Oval",
                     Size = "Small",
                     Quantity = 2,
+                    Color = "Black",
                     Price = 105.50M
                 },
                 new BoxView
@@ -103,6 +112,7 @@ namespace Boxetheus.Models
                     Shape = "Square",
                     Size = "Extra Large",
                     Quantity = 6,
+                    Color = "Beige",
                     Price = 103.15M
                 },
                 new BoxView
@@ -114,6 +124,7 @@ namespace Boxetheus.Models
                     Shape = "Square",
                     Size = "Extra Large",
                     Quantity = 4,
+                    Color = "Brown",
                     Price = 83.09M
                 }
             );
