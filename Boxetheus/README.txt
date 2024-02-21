@@ -22,21 +22,21 @@ Solutions:
 6. Replaced the contents of the `Views/HelloWorld/Index.cshtml` Razor view file.
 7. In the `HelloWorldController` class, replaced the `Index` method.
 
-Part 4, add a model to an ASP.NET Core MVC app
+Part 4, add a model to an ASP.NET Core Boxetheus app
 Add a model to an ASP.net Core MVC app
 1) Added a data model class : A Movie class is created in the Models folder to represent the data model for the application and in MovieContext class, derived from DbContext, is created in the Data folder. This class represents the database context and includes a DbSet for the Movie model.
 2) Initiated the Migration from tools menu selected NuGet Package Manager and chosen Package Manager Console.
 3) Tested the app by running the app and by selecting the Movie App link and examined the generated database context class and registration.
 4) Examined the Migration Initialcreate.cs migration file 
 
-Part 5, Work with a database in an ASP.NET Core MVC app
+Part 5, Work with a database in an ASP.NET Core Boxetheus app
 1) Examined the database from view menu option opened the SQL Server Object 
 2) Created a new class named SeedData in the models folder and replaced the code and added new movie list.
 3) Added the seed initializer replaced the contents of program.cs class and when executed the code could see the list of movie seeded in the code.
 
 
 2024-02-19 2:07AM
-Add search to an ASP.NET Core MVC app
+Add search to an ASP.NET Core Boxetheus app
 Controller Modifications:
 In the controller, updated the action methods that handle the displaying of data to include search functionality.Extracted and filtered data based on the search criteria.
 Updated the corresponding views to include a search form and displayed the search results. 
@@ -48,7 +48,7 @@ Verified the displayed Search Results and Modified the view to display the searc
 Used Razor syntax to conditionally render the search results.Tested the web to search functionality to ensure it works as expected.
 
 2024-02-20 10.10PM
-To add a new field to an ASP.NET Core MVC app
+To add a new field to an ASP.NET Core Boxetheus app
 
 Accessed the project in Visual Studio to begin the modification process.Opened the model class to add a new field:
 Navigated to the relevant model class within the project. Added a new property to the class with the appropriate data type:
@@ -58,3 +58,15 @@ Accessed the data context class that is associated with the model and incorporat
 Executed the migration to update the database with the new field.
 Executed a migration to apply the changes to the database, ensuring synchronization with the updated model.
 Updated the views and controllers to handle the new field.Modified the views and controllers that involve the model to accommodate the new field, ensuring proper handling and integration into the application's user interface and functionality.
+
+2024-02-20 10:33PM
+Opened the ASP.NET Core MVC app in Visual Studio: Navigated to the Model Class: Identify and open the model class that corresponds to the data entity requiring validation.
+Apply Data Annotations for Validation Within the model class, use data annotations (attributes) to define validation rules for the properties. For instance, use [Required] for mandatory fields, [StringLength] for maximum length, or custom annotations for specific requirements.
+
+Observation:
+ASP.NET Core MVC offers immediate feedback to users, supports client-side and server-side validation, and allows developers to implement custom validation logic. This enhances user experience by providing immediate feedback on input. The system also supports error message localization, allowing applications to display messages in different languages based on user preferences. This allows for better integration with other systems and enhances user experience.
+Immediate Feedback to Users: The incorporation of validation provides users with immediate feedback on their input, enhancing the user experience.
+I could learn more about the Client-Side and Server-Side Validation: ASP.NET Core supports both client-side and server-side validation. Data annotations primarily handle client-side validation, while server-side validation ensures data integrity on the server.
+Custom Validation Logic: Custom validation logic allows developers to implement specific business rules beyond standard annotations.
+Error Message Localization: ASP.NET Core Boxetheus supports localization for error messages, enabling applications to display messages in different languages based on user preferences.
+
