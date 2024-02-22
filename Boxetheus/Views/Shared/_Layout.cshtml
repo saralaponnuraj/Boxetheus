@@ -21,6 +21,13 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
+                        <style>
+                            .nav-item-right {
+                                margin-left: auto;
+                            }
+                        </style>
+
+                        <li class="nav-item nav-item-right">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
@@ -34,7 +41,14 @@
             @RenderBody()
         </main>
     </div>
-
+    <style>
+        /* Ensure the footer is fixed to the bottom */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - Boxetheus App - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
@@ -44,5 +58,12 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+    @{
+        Layout = null; // This ensures that this view does not inherit any layout from a parent view.
+    }
+
+
+
+
 </body>
 </html>

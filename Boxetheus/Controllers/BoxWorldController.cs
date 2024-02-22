@@ -3,7 +3,7 @@ using System.Text.Encodings.Web;
 
 namespace Boxetheus.Controllers;
 
-public class HelloWorldController : Controller
+public class BoxWorldController : Controller
 {
     // 
     // GET: /HelloWorld/
