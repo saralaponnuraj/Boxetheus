@@ -15,23 +15,23 @@ namespace Boxetheus.Models
      
         public DateTime OrderDate { get; set; }
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
-        [StringLength(5)]
+        [StringLength(20)]
         [Required]
         public string? Category { get; set; }
 
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
-        [StringLength(5)]
+        [StringLength(20)]
         [Required] 
         public string? Design { get; set; }
         public string? Shape { get; set; }
         public string? Size { get; set; }
         public int Quantity { get; set; }
-        [Range(1, 100)]
+        [Range(1, 500)]
         [DataType(DataType.Currency)]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
         [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
-        [StringLength(5)]
+        [StringLength(15)]
         [Required]
         public String Color { get; set; }
     }
