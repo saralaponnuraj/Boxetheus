@@ -37,6 +37,9 @@ Migration Time:
 Initial Migration: 20240219040441
 New column Migration: 20240221025510
 
+Time taken:
+5 hours 30 mins
+
 Branch History:
 All worked on "Sarala's Laptop" as we worked together on teams and at college and pushed it from the same laptop.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
