@@ -157,6 +157,53 @@ Creeated a new product value.
 Edited existing product value and examined whether the values are updated in the web page.
 Deleted the existing product and examined whether the product is deleted or not.
 
+2024-03-07
+1101
+Create a login.aspx page and switch it to HTML view
+Create register login.
+
+2024-03-12 
+21:30
+Made changes in program.cs file and appsettings.Production.json file
+
+2024-03-13
+17:00 
+
+Deployed successfully in Azure - by Sarala
+
+2024-03-15
+20:00
+
+Add authentication and authorization 
+(Reference : https://www.youtube.com/watch?v=yJP7Jv6d4Eg and https://www.youtube.com/watch?v=2Zwktsd6iSQ)
+
+1. Test :
+
+Github Repository Link: https://github.com/Dheeru-28-7418/Boxtheus
+
+Azure Link: https://boxetheusapplicationweb.azurewebsites.net/
+
+2. Production: Published and deployed with Authentication & Authorization.
+
+Github Repository Link: https://github.com/saralaponnuraj/BoxetheusWebApp
+
+Azure Link: https://boxetheus.azurewebsites.net
+
+2024-03-20
+16:30
+
+The above link is getting Error 403 - This web app is stopped (Sarala's azure account was used to deploy and publish Test and Product link, due to subscription is displayed we are getting Error 403)
+
+We again deployed and published the Test and production link from Dheeru and Eshika's Azure account
+Added Admin and Guest Roles
+
+1. Test :
+Github Repository Link: https://github.com/Dheeru-28-7418/Boxtheus
+Azure Link: https://boxtheustest.azurewebsites.net
+
+2. Production: Published and deployed with Authentication & Authorization.
+Github Repository Link: https://github.com/saralaponnuraj/BoxetheusWebApp
+Azure Link: https://boxetheusapp.azurewebsites.net
 
 
 
